@@ -14,15 +14,15 @@ Drivetrain::Drivetrain() {
     rightBot.SetIdleMode(IdleMode::kBrake); 
 }
 
-Drivetrain::Stop(){
+void Drivetrain::Stop(){
     TankDrive(0,0);    
 }
 
-Drivetrain::TankDrive(double lSpeed, double rSpeed){
+void Drivetrain::TankDrive(double lSpeed, double rSpeed){
     motors.TankDrive(lSpeed, rSpeed, false);
 }
 
-Drivetrain::ArcadeDrive(double xSpeed, double zRot) {
+void Drivetrain::ArcadeDrive(double xSpeed, double zRot) {
     motors.ArcadeDrive(xSpeed, zRot, false);
      
 }

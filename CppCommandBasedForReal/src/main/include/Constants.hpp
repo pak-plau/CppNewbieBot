@@ -24,4 +24,12 @@ namespace stuy::Constants {
         constexpr int RIGHT_TOP_PORT = 4;
         constexpr int RIGHT_BOT_PORT = 3;
     }
+
+    namespace Intake {
+        constexpr int MOTOR_PORT = -1;
+        constexpr int SOLENOID_PORT_A = -1;
+        constexpr int SOLENOID_PORT_B = -1;
+        constexpr int SENSOR_PORT = -1;
+        constexpr double INTAKE_MOTOR_SPEED = -1;
+    }
 }
